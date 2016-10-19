@@ -14,15 +14,9 @@
     <h1>Purchase your very own receipt!</h1>
 
     <!-- Large modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button> -->
 
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          ...
-        </div>
-      </div>
-    </div>
+
       <form id="info">
         <label for="name">Name:</label>
         <input type="text" id="name">
@@ -94,7 +88,7 @@
     </select>
     <div class="radio">
                 <label>
-                  <input type="radio" name="ship" value="now">
+                  <input type="radio" name="ship" value="now" checked>
                   Now!
                 </label>
               </div>
@@ -122,8 +116,16 @@
                   This year
                 </label>
               </div>
-
+<button type="submit" class="btn btn-primary">Submit</button>
           </form>
+
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <h1>Your Receipt</h1>
+              </div>
+            </div>
+          </div>
   </div>
   </body>
 
