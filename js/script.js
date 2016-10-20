@@ -9,9 +9,9 @@ $(document).ready(function(){
       var zipcode = $("#zipcode").val();
       var product = $("#product").val();
       var ship = $("input:radio[name=ship]:checked").val();
-      var finalinfo = "<p>" + name + "</p>" + "<h4>" + address + "</h4>" + "<p>"
-      + state + "</p>" + zipcode +"<br>" + product
-      + "<br>" + ship + "<br>";
+      var finalinfo = "<p>" + name + "</p>" + "<h4><p>" + address + "</p>" + "<p>"
+      + state + "</p><p>" + zipcode +"</p><p>" + product
+      + "</p><p>" + ship + "</p>";
 
       $(".modal-content").empty().append(finalinfo);
   //  }
